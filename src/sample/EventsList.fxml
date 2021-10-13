@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane onMouseMoved="#Mouse" prefHeight="518.0" prefWidth="650.0" style="-fx-background-color: #191970;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.EventsListController">
+   <children>
+      <ListView fx:id="ListViewToday" layoutX="108.0" layoutY="42.0" onMouseClicked="#EventListClick" prefHeight="242.0" prefWidth="200.0" style="-fx-background-color: EAF2F8;" />
+      <Label layoutX="226.0" layoutY="13.0" text="Events" textFill="#cc99cc">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="Add" layoutX="10.0" layoutY="326.0" mnemonicParsing="false" onAction="#AddBtn" style="-fx-background-color: #B0C4DE;" text="ADD MEMO" textFill="#000066" />
+      <Button fx:id="Removeid" layoutX="159.0" layoutY="326.0" mnemonicParsing="false" onAction="#RemoveBtn" style="-fx-background-color: #B0C4DE;" text="REMOVE" textFill="#000066" />
+      <Button fx:id="Editid" layoutX="238.0" layoutY="326.0" mnemonicParsing="false" onAction="#EditBtn" style="-fx-background-color: #B0C4DE;" text="EDIT" textFill="#000066" />
+      <DatePicker fx:id="DateCalender" layoutX="439.0" layoutY="184.0" onAction="#CalendarBtn" onMouseMoved="#MouseCalendar" prefHeight="32.0" prefWidth="174.0" />
+      <Button fx:id="Showid" layoutX="308.0" layoutY="326.0" mnemonicParsing="false" onAction="#ShowBtn" style="-fx-background-color: #B0C4DE;" text="SHOW FILE" textFill="#000066" />
+      <Label fx:id="Date" layoutX="439.0" layoutY="146.0" prefHeight="17.0" prefWidth="63.0" style="-fx-border-color: white;" text="date" textAlignment="JUSTIFY" textFill="#cc99cc" />
+      <Label fx:id="Userlbl" layoutX="460.0" layoutY="62.0" prefHeight="39.0" prefWidth="101.0" text="User" textAlignment="CENTER" textFill="#cc99cc">
+         <font>
+            <Font size="27.0" />
+         </font></Label>
+      <TextField fx:id="Memo" disable="true" layoutX="10.0" layoutY="404.0" prefHeight="47.0" prefWidth="441.0" promptText="Memo" style="-fx-background-color: #888888;" />
+      <TextField fx:id="Subtitle" disable="true" layoutX="10.0" layoutY="379.0" prefHeight="25.0" prefWidth="149.0" promptText="Subtitle" style="-fx-background-color: #888888;" />
+      <Button fx:id="Switch" layoutX="551.0" layoutY="121.0" mnemonicParsing="false" onAction="#SwitchBtn" style="-fx-background-color: #B0C4DE;" text="Switch User" textFill="#000066" />
+      <Separator layoutY="364.0" prefWidth="650.0" />
+      <Button fx:id="SaveBtn" disable="true" layoutX="399.0" layoutY="458.0" mnemonicParsing="false" onAction="#SaveBtn" style="-fx-background-color: #606dff;" text="Save" textFill="WHITE" />
+      <Button layoutX="540.0" layoutY="234.0" mnemonicParsing="false" onAction="#Todaybtn" style="-fx-background-color: #B0C4DE;" text="GO Today" textFill="#000066" />
+      <Button fx:id="AttachBtn" disable="true" layoutX="453.0" layoutY="404.0" minWidth="48.0" mnemonicParsing="false" onAction="#AttachBtn" prefHeight="47.0" prefWidth="48.0" style="-fx-background-color: #0099ff;" text="Atach" textFill="WHITE" />
+      <Label fx:id="DateLbl" layoutX="113.0" layoutY="13.0" text="dat" textFill="#cc99cc">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Button layoutX="516.0" layoutY="471.0" mnemonicParsing="false" onAction="#Exit" prefHeight="32.0" prefWidth="101.0" style="-fx-background-color: #FF2323;" text="SAVE &amp; EXIT" textFill="WHITE" />
+      <Label layoutX="321.0" layoutY="62.0" text="WELCOME" textFill="#cc99cc">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Button layoutX="308.0" layoutY="161.0" mnemonicParsing="false" onAction="#PlusBtn" prefHeight="47.0" prefWidth="48.0" text="+">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="59.0" layoutY="162.0" mnemonicParsing="false" onAction="#NegativeBtn" prefHeight="44.0" prefWidth="48.0" text="-">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
